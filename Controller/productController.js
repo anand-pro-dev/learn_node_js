@@ -45,8 +45,6 @@ const product_create = async (req, res) => {
 // Get All products
 const product_update = async (req, res) => {
     try {
-        details: req.body.details
-
 
         const updatedProduct = await Product.findByIdAndUpdate({ _id: req.params.id },
             product,
@@ -56,7 +54,7 @@ const product_update = async (req, res) => {
             title: req.body.title,
             price: req.body.price,
             image: req.body.image.Product,
-
+            details: req.body.details
         };
 
 
