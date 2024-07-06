@@ -1,0 +1,23 @@
+npm init -y 
+"type": "module",
+
+npm i -D nodemon 
+ "dev": "nodemon index.js"
+npm run dev
+
+url
+
+http://localhost:3000/api/v1/products
+
+
+{
+    "status": true,
+    "data": {
+        "title": "hello",
+        "price": "100",
+        "image": "image",
+        "details": "details",
+        "_id": "6689c111cfd4470804036eb3",
+        "__v": 0
+    }
+}
