@@ -3,7 +3,7 @@ const app = express();
 const PORT = 3000;
 //
 import productRouter from './routes/productRoutes.js';
-
+import cors from 'cors';
 
 // mongodb connection
 import dotenv from 'dotenv';
@@ -11,8 +11,7 @@ import connectDB from './config/db.js';
 connectDB();
 
 
-
-
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({
     extended: true,
