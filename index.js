@@ -1,9 +1,10 @@
 import express from 'express';
 const app = express();
-const PORT = 3000;
+
 //
 import productRouter from './routes/productRoutes.js';
 import cors from 'cors';
+const PORT = 3000;
 
 // mongodb connection
 import dotenv from 'dotenv';

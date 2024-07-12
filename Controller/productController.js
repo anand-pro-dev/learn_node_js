@@ -46,16 +46,18 @@ const product_create = async (req, res) => {
 const product_update = async (req, res) => {
     try {
 
-        const updatedProduct = await Product.findByIdAndUpdate({ _id: req.params.id },
-            product,
-            { new: true });
-
         const product = {
             title: req.body.title,
             price: req.body.price,
             image: req.body.image.Product,
             details: req.body.details
         };
+
+
+        const updatedProduct = await Product.findByIdAndUpdate({ _id: req.params.id },
+            product,
+            { new: true });
+
 
 
         if (!updatedProduct) {
